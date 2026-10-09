@@ -1,0 +1,21 @@
+LunaDeck
+
+LunaDeck is aimed to be an app that integrates with Sunshine and Moonlight to create a SteamDeck like experience.
+It's main function is to manage display once a phone connects to a PC with Sunshine. For example if there are 2 displays connected to a PC, on connecting to the PC with Moonlight one will be turned off and the other becomes the streamed display. It also supports virtual displays, that LunaDeck was intended to be used with, where a third party cannot see what is happening on the screen while a Moonlight client is connected.
+
+There are extra features planned to make it more suitable for portable gaming:
+- Suspend mode: when a client disconnects from a Sunshine stream without quitting the stream, LunaDeck will aim to preserve power on the streaming PC by managing power profiles and limiting game FPS with gamescope or MangoHud if able.
+- Audio control: mute and raise audio on client disconnect/connect.
+- LunaDeck Android App: A fork of the Moonlight project that integrates with the PC LunaDeck application through a websocket. It will report stream and game stats, and provide extra on-screen buttons for easier PC control.
+
+Planned supported platforms: Linux, Windows.
+Planned supported compositors: Niri, Hyprland, Kwin, Gnome.
+
+Not in scope of the application:
+- Creating and managing virtual displays. LunaDeck will not care about what display it uses.
+- Game launcher. LunaDeck only makes it esier to play from oa phone, but the PC's applications will provide gaming functionality.
+
+v0.1 scope:
+- Distribution: NixOs. Compositor: Niri
+- The ability to set a display to be the streaming display, and turning that on when a Moonlight client connects, while turning all other displays off. On the stream ending the original display states are restored.
+- Allowing use on any Niri compositor and surviving between moving from DMS Greeter to a Niri session. 
