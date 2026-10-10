@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jongedav/rlayed/internal/display"
+	"github.com/rlayed/rlayed/internal/display"
 )
 
 func main() {
