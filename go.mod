@@ -1,3 +1,3 @@
-module github.com/jongedav/lunadeck
+module github.com/jongedav/rlayed
 
 go 1.26.8
